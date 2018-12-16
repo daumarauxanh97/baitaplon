@@ -55,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  row-gap: normal;
   top: 37%;
   right: 9%; }
   .dot-container .dot {
@@ -203,6 +203,7 @@ body {
   .footer .footer-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 94%;
     margin-left: 3%;
     color: white; }
@@ -215,6 +216,7 @@ body {
       .footer .footer-container .footer-article .latest-tweets {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: baseline; }
         .footer .footer-container .footer-article .latest-tweets .tweet-icon {
           width: 5%; }
