@@ -1,0 +1,181 @@
+.header-nav {
+  width: 100%;
+  height: auto;
+  background-color: #212429;
+  .header-nav-content{
+    position: relative;
+    width: 94%;
+    margin-left: 3%;
+    @include flex-center;
+    .icon{
+      padding-bottom: 1%;
+      padding-top: 1%;
+      flex-grow: 1;
+      @include flex-center;
+      border-left: 0.1px solid #3c3c3c;
+    }
+    .deco{
+      position: absolute;
+      left: 45%;
+      font-size: 1em;
+      letter-spacing: 4px;
+      line-height: 30px;
+      color: #fefefe;
+      font-family: "Hind";
+      font-weight: bold;
+      padding-bottom: 1%;
+      padding-top: 1%;
+    }
+    .icon-tweet{
+      width: 14px;
+      height: 12px;
+      background: white;
+      mask-image: url("../image/home_page/tweet3.svg");
+      -webkit-mask-image: url("../image/home_page/tweet3.svg");      }
+    .space{
+      flex-grow: 24;
+      @include flex-center;
+    }
+    .icon:first-child{
+      border-right: 0.1px solid #3c3c3c;
+    }
+    .icon:last-child {
+      border-right: 0.1px solid #3c3c3c;
+    }
+  }
+}
+.header-content{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #212429 50%, #212429 50%,#f9f9fb 50%,#f9f9fb 100%);
+  .header-image{
+    margin-left: 3%;
+    width: 94%;
+    height: auto;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  :nth-child(2),:nth-child(3){
+    display: none;
+  }
+}
+//.prev,.next,
+.slide-show{
+  @include flex-column;
+  position: absolute;
+  right: 7%;
+  top: 20%;
+}
+.dot-container{
+  position: absolute;
+  @include flex-column;
+  top: 33%;
+  right:11% ;
+  .dot{
+    margin-bottom: 100%;
+    width: 7px;
+    height: 7px;
+    border: 0.5px solid white;
+  }
+  .dot:hover{
+    background-color: gray;
+  }
+
+}
+//.prev{
+//  right: 7%;
+//  top: 55%;
+//}
+//.next{
+//  right: 7%;
+//  top: 25%;
+//}
+//.feature{
+//  right: 7%;
+//  top: 30%;
+//}
+.active{
+  background-color: gray;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.signup-container{
+  background-color: #f9f9fb;
+  .signup {
+    background-color: #eeebeb;
+    width: 94%;
+    margin-left: 3%;
+    height: auto;
+    .signupcontent{
+      @include flex-around-center;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      .signuptitle {
+        font-size: 20px;
+        width:15% ;
+        line-height: 28px;
+        color: #212121;
+        letter-spacing: 4px;
+        font-family: MyriadPro;
+        font-weight: bold;
+      }
+      .signupname{
+        font-size: 20px;
+        width: 25%;
+        input{
+          border: none;
+          padding-top: 3%;
+          padding-bottom: 3%;
+          padding-left: 5%;
+          width: 100%;
+        }
+      }
+      .signupemail{
+        font-size: 20px;
+        width: 25%;
+        input{
+          border: none;
+          padding-top: 3%;
+          padding-bottom: 3%;
+          padding-left: 5%;
+          width: 100%;
+        }
+      }
+      .signupbutton{
+        //font-size: 20px;
+        width: 15%;
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: Hind;
+        button{
+          border: none;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          padding-left: 5%;
+          background-color: $subscribe-color;
+          color: white;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
