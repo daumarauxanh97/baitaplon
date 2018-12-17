@@ -1,0 +1,285 @@
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.header-nav {
+  width: 100%;
+  height: auto;
+  background-color: #212429; }
+  .header-nav .header-nav-content {
+    width: 94%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header-nav .header-nav-content .icon {
+      padding-bottom: 1%;
+      padding-top: 1%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: 0.1px solid white; }
+    .header-nav .header-nav-content .deco {
+      color: white;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      flex-grow: 24;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .header-nav .header-nav-content .icon:first-child {
+      border-right: 0.1px solid white; }
+    .header-nav .header-nav-content .icon:last-child {
+      border-right: 0.1px solid white; }
+
+.header-content {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #212429 50%, #212429 50%, white 50%, white 100%); }
+  .header-content .header-image {
+    position: relative;
+    margin-left: 3%;
+    width: 94%;
+    height: auto; }
+    .header-content .header-image img {
+      width: 100%;
+      height: auto; }
+  .header-content :nth-child(2), .header-content :nth-child(3) {
+    display: none; }
+
+.prev, .next, .dot-container {
+  position: absolute; }
+
+.dot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: normal;
+  top: 37%;
+  right: 9%; }
+  .dot-container .dot {
+    margin-bottom: 100%;
+    width: 7px;
+    height: 7px;
+    border: 0.5px solid white; }
+  .dot-container .dot:hover {
+    background-color: gray; }
+
+.prev {
+  right: 7%;
+  top: 50%; }
+
+.next {
+  right: 7%;
+  top: 25%; }
+
+.active {
+  background-color: gray; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.signup {
+  background-color: #eeebeb;
+  width: 94%;
+  margin-left: 3%;
+  height: auto; }
+  .signup .signupcontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%; }
+    .signup .signupcontent .signuptitle {
+      font-size: 20px;
+      width: 15%; }
+    .signup .signupcontent .signupname {
+      font-size: 20px;
+      width: 25%; }
+      .signup .signupcontent .signupname input {
+        border: none;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        width: 100%; }
+    .signup .signupcontent .signupemail {
+      font-size: 20px;
+      width: 25%; }
+      .signup .signupcontent .signupemail input {
+        border: none;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        width: 100%; }
+    .signup .signupcontent .signupbutton {
+      font-size: 20px;
+      width: 15%; }
+      .signup .signupcontent .signupbutton button {
+        border: none;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        background-color: #212121;
+        color: white;
+        width: 100%; }
+
+.container {
+  background-color: #f9f9fb;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3%; }
+  .container .container-content {
+    padding-top: 3%;
+    width: 94%;
+    height: auto;
+    margin-left: 3%; }
+    .container .container-content .bgwhite {
+      background-color: white; }
+    .container .container-content .bgblack {
+      background-color: black;
+      color: white; }
+    .container .container-content .img-post {
+      width: 100%;
+      height: auto; }
+    .container .container-content .content-icon-black {
+      margin-left: 45%;
+      margin-top: -6%;
+      padding: 3%;
+      background-color: black; }
+    .container .container-content .content-icon-white {
+      margin-left: 45%;
+      margin-top: -6%;
+      padding: 3%;
+      background-color: white; }
+    .container .container-content .social-icon {
+      padding-top: 7%;
+      padding-bottom: 2%; }
+    .container .container-content .grid-container .grid:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .container .container-content .grid-container .grid-sizer,
+    .container .container-content .grid-container .grid-item {
+      width: 23.5%; }
+    .container .container-content .grid-container .grid-item {
+      height: auto;
+      float: left;
+      margin-bottom: 2%;
+      word-break: break-all; }
+    .container .container-content .Read-more {
+      text-align: center;
+      border-right: 0.2px solid black;
+      border-left: 0.2px solid black; }
+    .container .container-content .content-category {
+      text-align: center; }
+    .container .container-content .content-title {
+      text-align: center; }
+    .container .container-content .content-date {
+      text-align: center; }
+    .container .container-content .content {
+      padding-left: 5%;
+      padding-right: 5%; }
+
+.footer {
+  background-color: #212429;
+  width: 100%;
+  height: auto; }
+  .footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 94%;
+    margin-left: 3%;
+    color: white; }
+    .footer .footer-container .footer-article {
+      padding-top: 5%;
+      padding-bottom: 3%;
+      width: 23.5%; }
+      .footer .footer-container .footer-article .footer-title {
+        padding-bottom: 5%; }
+      .footer .footer-container .footer-article .latest-tweets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline; }
+        .footer .footer-container .footer-article .latest-tweets .tweet-icon {
+          width: 5%; }
+        .footer .footer-container .footer-article .latest-tweets .tweet-content {
+          width: 90%; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .header-nav .header-nav-content .icon {
+    padding-top: 2%;
+    padding-bottom: 2%; }
+  .header-nav .header-nav-content .icon:nth-child(2), .header-nav .header-nav-content .icon:nth-child(3), .header-nav .header-nav-content .icon:nth-child(4), .header-nav .header-nav-content .icon:nth-child(5) {
+    display: none; }
+  .signup .signupcontent {
+    flex-wrap: wrap; }
+    .signup .signupcontent .signuptitle {
+      display: none; }
+    .signup .signupcontent .signupname {
+      width: 100%;
+      margin-bottom: 3%; }
+    .signup .signupcontent .signupemail {
+      width: 100%;
+      margin-bottom: 3%; }
+    .signup .signupcontent .signupbutton {
+      width: 100%; }
+  .container .container-content {
+    flex-wrap: wrap; }
+    .container .container-content .column {
+      width: 100%; }
+  .container .container-content .grid-sizer, .container .container-content .grid-item {
+    width: 100%; }
+  .footer .footer-container {
+    flex-wrap: wrap; }
+    .footer .footer-container .footer-article {
+      width: 100%; } }
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .header-nav .header-nav-content .icon {
+    padding-top: 2%;
+    padding-bottom: 2%; }
+  .header-nav .header-nav-content .icon:nth-child(2), .header-nav .header-nav-content .icon:nth-child(3), .header-nav .header-nav-content .icon:nth-child(4), .header-nav .header-nav-content .icon:nth-child(5) {
+    display: none; }
+  .signup .signupcontent {
+    flex-wrap: wrap;
+    font-size: 18px; }
+    .signup .signupcontent .signuptitle {
+      display: none; }
+    .signup .signupcontent .signupname {
+      width: 35%; }
+    .signup .signupcontent .signupemail {
+      width: 35%; }
+    .signup .signupcontent .signupbutton {
+      width: 20%; }
+  .container .container-content {
+    flex-wrap: wrap; }
+    .container .container-content .column {
+      width: 48%; }
+  .container .container-content .grid-sizer, .container .container-content .grid-item {
+    width: 48%; }
+  .footer .footer-container {
+    flex-wrap: wrap; }
+    .footer .footer-container .footer-article {
+      width: 48%; } }
+
+/* Desktop Styles */

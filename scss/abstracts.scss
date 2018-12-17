@@ -1,0 +1,57 @@
+//variables px
+$px:0px;
+//variables color
+$subscribe-color:#212121;
+//mixin
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-center-ho{
+  display: flex;
+  align-items: center;
+
+}
+@mixin flex-center-ve{
+  display: flex;
+  justify-content: center;
+
+}
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: normal;
+}
+@mixin flex-column-around{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: auto
+}
+@mixin flex-between{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin flex-around{
+  display: flex;
+  justify-content: space-around;
+}
+@mixin flex-around-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin padding($pdt:0px,$pdr:0px,$pdb:0px,$pdl:0px){
+  padding-top: $pdt+$px;
+  padding-right: $pdr +$px;
+  padding-bottom: $pdb +$px;
+  padding-left: $pdl +$px;
+}
